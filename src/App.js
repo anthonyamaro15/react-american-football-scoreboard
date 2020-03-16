@@ -8,7 +8,7 @@ function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
   const [hScore, setHScore] = useState(0);
   const [fScore, setFScore] = useState(0);
-  const [time, setTime] = useState(5);
+  const [time, setTime] = useState(60);
   const [id, setId] = useState(0);
 
   useEffect(() => {
