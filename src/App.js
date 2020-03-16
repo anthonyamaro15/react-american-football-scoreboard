@@ -1,5 +1,5 @@
 //TODO: STEP 1 - Import the useState hook.
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
 import Buttons from "./components/Buttons";
@@ -10,8 +10,6 @@ function App() {
   const [fScore, setFScore] = useState(0);
   const [time, setTime] = useState(5);
   const [id, setId] = useState(0);
-  const countRef = useRef(time);
-  countRef.current = time;
 
   useEffect(() => {
     const timer = setTimeout(() => {
